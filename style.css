@@ -268,9 +268,13 @@ h3, .title_h2{
 }
 .phone_ilustration_content{
     background: url('./images/bg-pattern-circles.svg') no-repeat;
+    
     background-size: 96.7%;
     background-position-y: -30em;
     background-position-x: -9.6em;
+}
+.phone_ilustration_content::before{
+    background-color: var(--Grayish_blue_footer_text);
 }
 .phone_ilustration{
     top: -4em;
@@ -329,4 +333,41 @@ h3, .title_h2{
 /*  footer  */
 footer{
     background-color: var(--Very_dark_black_blue_footer_background);
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
 }
+footer img{
+    margin: 1em auto;
+    position: relative;
+    bottom: 5em;
+}
+
+.menu_footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    gap: 10px;
+}
+
+
+.footer_menu_items{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+}
+.footer_menu_items a {
+    font-weight: 600;
+}
+.footer_sub_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+.footer_sub_menu a{
+    font-weight: 400;
+}
+
+
