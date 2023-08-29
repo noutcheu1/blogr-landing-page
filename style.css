@@ -45,7 +45,9 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 4.5fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 440px 700px 400px 800px 400px;
+    gap: 5em;
+    
 }
 a{
     text-decoration: none;
@@ -71,7 +73,7 @@ li {
 }
 
 header{
-    
+    border-bottom-left-radius: 4em;
     background:  linear-gradient(0.25turn, var(--Very_light_red),var(--Light_red)) ;
 }
 
@@ -198,6 +200,132 @@ menu::after{
     
 }
 
+/* introduction part  */
+
+.introduction{
+    display: grid;
+   
+    grid-template-rows: 0.1fr 2fr;
+
+}
+
+.desktop_display{
+    background:url('./images/illustration-editor-desktop.svg') no-repeat;
+    background-size: contain;
+    background-size: 100%;
+    height: 100%;
+    background-position-x: 11rem;
+   
+}
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    align-content: center;
+    gap: 2em;
+    margin-left: 10em;
+}
+
+.left article {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.title_h2{
+    text-align: center;
+    top: 5em;
+    position: relative;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+h3, .title_h2{
+    color: var(--Very_dark_blue_headings);
+}
+
+/* architecture */
+.architecture{
+    background-color: var(--Very_dark_desaturated_blue);
+    border-bottom-left-radius: 6em;
+    border-top-right-radius: 6em;
+
+}
+.architecture{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.phone_ilustration_content{
+    background: url('./images/bg-pattern-circles.svg') no-repeat;
+    background-size: 96.7%;
+    background-position-y: -30em;
+    background-position-x: -9.6em;
+}
+.phone_ilustration{
+    top: -4em;
+    left: 6em;
+    position: relative;
+}
+
+.desciption article{
+    margin: 7em auto;
+    position: relative;
+    left: -14em;
+    text-align: left;
+    display: grid;
+    gap: 1em;
+    color: var(--White);
+
+}
+.desciption h2{
+    font-size: 34px;
+    
+}
+
+/* product */
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.desktop_ilustration{
+    
+    right: 17em;
+    position: relative;
+}
+
+.product_left {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    right: 15em;
+    gap: 3.6em;
+}
+
+
+.product_left article{
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 1em;
+}
 /*  footer  */
 footer{
     background-color: var(--Very_dark_black_blue_footer_background);
