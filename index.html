@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <script src="menu.js" defer></script>
     <link
       rel="icon"
       type="image/png"
@@ -26,12 +26,49 @@
     </style>
   </head>
   <body>
+   
     <div class="container">
       <header>
         <div class="overlay">
           <nav>
+            <div class="menu_vertical" id="menu_vertical">
+              <ul class="menu_v">
+                <li class="menu_deroulant">
+                  <a href="#">Product </a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Overview </a></li>
+                    <li><a href="#">Pricing </a></li>
+                    <li><a href="#">LinkeMarketplace </a></li>
+                    <li><a href="#"> Features</a></li>
+                    <li><a href="#"> IntegrationsdIn</a></li>
+                  </ul>
+                </li>
+                <li class="menu_deroulant">
+                  <a href="#">Company </a>
+                  <ul class="sub_menu">
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#">Team </a></li>
+                    <li><a href="#">Blog </a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </li>
+                <li class="menu_deroulant">
+                  <a href="#">Connect </a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="connection_v">
+                <a href="#">Login</a>
+                <a href="#" class="decoration_btn_v">Sign Up</a>
+              </div>
+            </div>
             <img class="logo" src="./images/logo.svg" alt="logo website" />
-            <div class="menu_list">
+            <div>
+              <div class="menu_list"></div>
               <ul class="menu">
                 <li class="menu_deroulant">
                   <a href="#">Product </a>
@@ -105,9 +142,7 @@
               </p>
             </article>
           </div>
-          <div class="rigth">
-            <div class="desktop_display"></div>
-          </div>
+          <div class="desktop_display"></div>
         </section>
       </section>
       <section class="architecture">
@@ -131,14 +166,8 @@
         </div>
       </section>
       <section class="product">
-        <div class="desktop_ilustration">
-          <img src="./images/illustration-laptop-desktop.svg" />
-        </div>
+        <div class="desktop_ilustration"></div>
         <section class="product_left">
-          <article>
-            <h3></h3>
-            <p class="article_description"></p>
-          </article>
           <article>
             <h3>Free, open, simple</h3>
             <p class="article_description">
